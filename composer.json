@@ -9,5 +9,10 @@
             "name": "Moshe Brevda",
             "email": "mbrevda@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mbrevda\\Logger\\": "src/"
+        }
+    }
 }
