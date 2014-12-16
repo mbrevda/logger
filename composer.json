@@ -1,0 +1,13 @@
+{
+    "name": "mbrevda/logger",
+    "description": "A wrapper for Monolog that adds some debugging methods",
+    "require": {
+        "monolog/monolog": "~1.11"
+    },
+    "authors": [
+        {
+            "name": "Moshe Brevda",
+            "email": "mbrevda@gmail.com"
+        }
+    ]
+}
