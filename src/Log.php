@@ -13,13 +13,13 @@ class Log extends Logger
      */
     public function printr()
     {
-        $data = '';
+        $out = '';
 
         foreach (func_get_args() as $data) {
-            $data .= print_r($data, true) . PHP_EOL;
+            $out .= print_r($data, true) . PHP_EOL;
         }
 
-        $this->debug($data);
+        $this->debug($out);
     }
 
     /**
@@ -29,12 +29,12 @@ class Log extends Logger
      */
     public function export()
     {
-        $data = '';
+        $out = '';
 
         foreach (func_get_args() as $data) {
             $data .= var_export($data, true) . PHP_EOL;
         }
-        $this->debug($data);
+        $this->debug($out);
     }
 
     /**
@@ -49,9 +49,9 @@ class Log extends Logger
             var_dump($data);
         }
 
-        $data = ob_get_contents();
+        $out = ob_get_contents();
         ob_end_clean();
 
-        $this->debug($data);
+        $this->debug($out);
     }
 }
